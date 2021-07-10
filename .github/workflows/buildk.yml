@@ -58,7 +58,7 @@ jobs:
         #chmod +x $DIY_P1_SH
         #cd openwrt
         #$GITHUB_WORKSPACE/$DIY_P1_SH
-        mkdir bin
+        mkdir bin/
 
     #- name: Update feeds
       #run: cd openwrt && ./scripts/feeds update -a
@@ -81,8 +81,8 @@ jobs:
     - name: Download package
       id: package
       run: |
-        cd openwrt
-        cd bin
+        #cd openwrt
+        cd bin/
         #make defconfig
         #make download -j8
         #find dl -size -1024c -exec ls -l {} \;
